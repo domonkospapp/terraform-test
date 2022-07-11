@@ -1,0 +1,10 @@
+{
+  "name": "Terraform with AWS",
+  "build": {
+    "dockerfile": "Dockerfile",
+  },
+   "postStartCommand": ["terraform", "init"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
