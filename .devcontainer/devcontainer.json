@@ -3,7 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile",
   },
-   "postStartCommand": ["terraform", "init"],
+   "postStartCommand": ".devcontainer/postCreate.sh",
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   }
