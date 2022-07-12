@@ -3,8 +3,5 @@
   "build": {
     "dockerfile": "Dockerfile",
   },
-  "postCreateCommand": ".devcontainer/postCreate.sh",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  }
+  "postCreateCommand": ".devcontainer/postCreate.sh"
 }
