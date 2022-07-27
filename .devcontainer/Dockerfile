@@ -7,6 +7,6 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
         unzip awscliv2.zip && \
         sudo ./aws/install
 
-RUN wget "https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip" && \
-        unzip terraform_0.12.20_linux_amd64.zip && \
+RUN wget "https://releases.hashicorp.com/terraform/1.2.6/terraform_1.2.6_windows_amd64.zip" && \
+        unzip terraform_1.2.6_windows_amd64.zip && \
         mv terraform /usr/local/bin/
