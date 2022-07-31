@@ -15,3 +15,10 @@ variable "db_pass" {
   type        = string
   sensitive   = true
 }
+
+# S3 Variables
+
+variable "bucket_name" {
+  description = "name of s3 bucket for app data"
+  type        = string
+}

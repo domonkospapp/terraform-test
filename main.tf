@@ -40,7 +40,7 @@ resource "aws_instance" "instance_2" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "domonkos-papp-web-app-data"
+  bucket = var.bucket_name
 }
 
 resource "aws_s3_bucket_versioning" "versioning_bucket" {
