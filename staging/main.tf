@@ -27,3 +27,7 @@ module "web_app" {
   db_user          = var.db_user
   db_pass          = var.db_pass
 }
+
+output "web_app_module" {  
+  value = module.web_app  
+}
