@@ -5,7 +5,7 @@ cd ../../staging
 
 # Create the resources
 terraform init
-terraform apply -auto-approve -var=db_user='user123' -var=db_pass='password123' -var=db_name='test-db' -var=db_pass='password123' -var=bucket_name='test123'
+terraform apply -auto-approve -var=db_user='user123' -var=db_pass='password123' -var=db_name='test-db' -var=db_pass='password123' -var=bucket_name='test321321312'
 
 # Wait while the instance boots up
 # (Could also use a provisioner in the TF config to do this)
