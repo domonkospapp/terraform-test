@@ -13,8 +13,8 @@ sleep 60
 
 # Query the output, extract the IP and make a request
 terraform output -json |\
-jq -r '.instance_ip_addr.value' |\
-xargs -I {} curl http://{}:8080 -m 10
+jq -r '.web_app_module.value.load_balancer_dns_name' |\
+xargs -I {} curl http://{} -m 10
 
 # If request succeeds, destroy the resources
 terraform destroy -auto-approve
