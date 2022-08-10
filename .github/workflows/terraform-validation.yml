@@ -8,8 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          cd staging
+      - name: Run tests
+        env:
+          TF_TOKEN_APP_TERRAFORM_IO: ${{ secrets.TF_API_TOKEN }}
+        working-directory: ./staging/
+        run: |
           terraform init
           terraform fmt -check
           terraform validate
