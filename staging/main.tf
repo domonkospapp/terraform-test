@@ -23,11 +23,11 @@ module "web_app" {
   app_name         = "app-1"
   environment_name = "staging"
   # instance_type    = "t2.small"
-  db_name          = "${local.environment_name}${var.db_name}"
-  db_user          = var.db_user
-  db_pass          = var.db_pass
+  db_name = "${local.environment_name}${var.db_name}"
+  db_user = var.db_user
+  db_pass = var.db_pass
 }
 
-output "web_app_module" {  
-  value = module.web_app  
+output "web_app_module" {
+  value = module.web_app
 }
