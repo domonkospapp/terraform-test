@@ -1,5 +1,6 @@
 name: "Terraform static validation"
 on:
+  workflow_dispatch:
   schedule:
   - cron: "0 0 * * *"
 
